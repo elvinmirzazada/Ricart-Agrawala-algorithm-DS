@@ -73,11 +73,11 @@ if __name__ == '__main__':
     time.sleep(1)
 
     while True:
-        command = str(input('Input the command: '))
+        command = str(input('Input the command - (list, time-p, time-cs, exit): '))
 
         if command == 'list':
             for node in list_of_nodes:
-                print(f'P{node.id}, {node.state.value}, {node.time_stamp}')
+                print(f'P{node.id}, {node.state.value}')
         if 'time-p' in command:
             t = int(command.split(' ')[1])
             for node in list_of_nodes:
