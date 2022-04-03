@@ -15,6 +15,8 @@ Starting the program:
 The process mini demo video: https://drive.google.com/file/d/1bPgRBeo5uNXgeIkRAzkG862gkFxkrcF5/view?usp=sharing
 
 
+
+----------------------------------------------------------------------------------------------------------------------
 The project has following functionality:
 
 **list**: This command lists all the nodes and its states. For instance,
