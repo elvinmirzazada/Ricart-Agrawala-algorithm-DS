@@ -9,6 +9,9 @@ Starting the program:
 - **main.ps1 N** on the command prompt in windows
 - **main.sh N** on the terminal in linux/ubuntu
 
+*N - count of processes/nodes
+
+
 
 The project has following functionality:
 
