@@ -19,12 +19,12 @@ class STATES(enum.Enum):
     HELD = "HELD"
 
 class Node(threading.Thread):
-    def __init__(self, id, t=10, cs_t = 20):
+    def __init__(self, id):
         threading.Thread.__init__(self)
         global TIME_OUT_INTERVAL
         global CS_TIME_OUT_INTERVAL
-        TIME_OUT_INTERVAL = np.random.randint(5, t)
-        CS_TIME_OUT_INTERVAL = np.random.randint(10, cs_t)
+        TIME_OUT_INTERVAL = 5
+        CS_TIME_OUT_INTERVAL = 10
         self.state = STATES.DO_NOT_WANT
         self.id = id
         self.time_stamp = self.get_timestamp()
@@ -35,11 +35,11 @@ class Node(threading.Thread):
 
     def set_time_out_interval(self, time_out):
         global TIME_OUT_INTERVAL
-        TIME_OUT_INTERVAL = time_out
+        TIME_OUT_INTERVAL = np.random.randint(5, time_out)
 
     def set_cs_time_out_interval(self, time_out):
         global CS_TIME_OUT_INTERVAL
-        CS_TIME_OUT_INTERVAL = time_out
+        CS_TIME_OUT_INTERVAL = np.random.randint(10, time_out)
 
     def run(self):
         while True:

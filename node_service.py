@@ -53,14 +53,6 @@ class NodeService(rpyc.Service):
             # time.sleep(CS_TIME_OUT_INTERVAL)
 
 
-
-    def exposed_recieve(self):
-        if self.node.state == STATES.DO_NOT_WANT:
-            return 'OK'
-        
-        elif self.node.state == STATES.WANTED:
-            return (datetime.datetime.timestamp(self.get_time()), self.node.id)
-
 def rpc_main(server):
 	server.start()   
 
