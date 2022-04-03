@@ -12,6 +12,8 @@ Starting the program:
 *N - count of processes/nodes
 
 
+The process mini demo video: https://drive.google.com/file/d/1bPgRBeo5uNXgeIkRAzkG862gkFxkrcF5/view?usp=sharing
+
 
 The project has following functionality:
 
